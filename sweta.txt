@@ -1,0 +1,17 @@
+apple 
+ornge
+guava
+banana
+grapes
+carrot
+mango
+litchi
+coconut
+papaya
+pinapple
+pear
+date
+
+brinjal
+pea
+onion
