@@ -1,0 +1,144 @@
+PRICE ELASTICITY – TELECOM TRANSACTION DATASET
+BUSINESS SCENARIOS AND STRATEGIC VALUE
+==============================================================
+
+DATASET STRUCTURE
+-----------------
+This is a transaction-level telecom recharge dataset.
+
+Price  = transaction_amount
+Demand = Refill frequency per subscriber
+Time   = transaction_timestamp
+
+Each row represents one recharge transaction made by a subscriber.
+
+Elasticity measures how refill frequency changes when price changes.
+
+
+
+BUSINESS SCENARIOS BASED ON PRICE ELASTICITY
+
+1) HIGHLY PRICE ELASTIC CUSTOMERS
+Definition:
+When price increases, refill frequency drops significantly.
+
+Business Actions:
+- Offer smaller denomination packs.
+- Provide targeted discounts.
+- Avoid aggressive price increases.
+
+Business Benefit:
+- Protect transaction volume.
+- Prevent revenue loss.
+
+
+2) PRICE INELASTIC CUSTOMERS
+Definition:
+Price changes have little impact on refill frequency.
+
+Business Actions:
+- Introduce premium bundles.
+- Slightly increase prices.
+- Upsell higher-value packs.
+
+Business Benefit:
+- Increase ARPU.
+- Improve overall revenue.
+
+
+3) SEGMENT-BASED ELASTICITY
+Elasticity varies across segmentation_id or service_class.
+
+Business Actions:
+- Apply segment-based pricing.
+- Personalize promotions.
+- Target offers per customer group.
+
+Business Benefit:
+- Higher profitability through smart pricing.
+
+
+4) TIME-BASED ELASTICITY
+Customer sensitivity changes over time.
+
+Business Actions:
+- Run promotions during high-sensitivity periods.
+- Adjust pricing during peak seasons.
+
+Business Benefit:
+- Revenue optimization through timing.
+
+
+5) SERVICE CLASS ELASTICITY
+Elasticity varies by service class.
+
+Business Actions:
+- Maintain affordability for basic users.
+- Upsell premium users.
+
+Business Benefit:
+- Balanced revenue strategy.
+
+
+6) AGENT-LEVEL IMPACT
+Elasticity differs across voucher agents.
+
+Business Actions:
+- Incentivize high-performing agents.
+- Monitor agent-level refill trends.
+Business Benefit:
+- Channel performance optimization.
+
+
+7) REVENUE OPTIMIZATION
+Revenue = Price × Quantity
+
+If Elasticity > 1 (Elastic):
+Price increase → Revenue decreases
+
+If Elasticity < 1 (Inelastic):
+Price increase → Revenue increases
+
+Business Use:
+- Simulate pricing changes before implementation.
+- Reduce financial risk.
+
+
+8) CUSTOMER BEHAVIOR PROFILING
+Identify:
+- Frequent small refill users
+- Occasional high-value users
+- Premium customers
+
+Business Actions:
+- Loyalty programs
+- Personalized bundles
+- Retention strategies
+
+Business Benefit:
+- Improved customer lifetime value.
+
+
+
+KEY things TO TRACK
+- Average refill amount
+- Monthly revenue
+- Refill frequency per subscriber
+- ARPU (Average Revenue Per User)
+- Revenue by segment
+- Revenue by service class
+- Elasticity coefficient
+
+
+EXECUTIVE SUMMARY
+This telecom transaction dataset enables the business to measure 
+how refill behavior changes with price variation.
+
+By calculating price elasticity, the company can:
+
+- Predict impact of price changes
+- Avoid revenue loss
+- Optimize pricing strategy
+- Increase profitability
+- Support data-driven decision making
+
