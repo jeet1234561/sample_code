@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  db:
+    image: timescale/timescaledb:latest-pg16
+    container_name: epiap_timescaledb
+    environment:
+      POSTGRES_USER: epiap
+      POSTGRES_PASSWORD: epiap_dev_secret
+      POSTGRES_DB: epiap
+    ports:
+      - "5433:5432"
+    volumes:
+      - epiap_pgdata:/home/postgres/pgdata/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U epiap"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: epiap_backend
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  epiap_pgdata:
+ 
